@@ -1,0 +1,88 @@
+body{
+    background-color: #1f2f3f;
+    font-family: 'Raleway', sans-serif;
+}
+.quzzle-solver-main-container{
+    width: 50%;
+    margin-left: 100px;
+    float: left;
+    margin-top: 100px;
+    position: fixed;
+}
+
+.button{
+    font-size: 15px;
+    margin: 0 auto;
+    margin-top: 65px;
+    padding: 10px 22px;
+    color: #fff;
+    display: inline-block;
+    transition: all 0.5s;
+    font-weight: 500;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #fff;
+    color: #164E71;
+    border-color: transparent;
+}
+
+/* .button-container{
+    width: 266px;
+} */
+
+.quzzle-container{
+    position: relative;
+    height: 350px;
+    width: 280px;
+}
+
+.quzzle-container .block{
+    position: absolute;
+    border: 1px solid black;
+    font-weight: bold;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color: #E9E1FA;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.quzzle-container .block-type-1{
+    height:70px;
+    width:70px;
+}
+
+.quzzle-container .block-type-2{
+    height:140px;
+    width:70px;
+}
+
+.quzzle-container .block-type-3{
+    height:70px;
+    width:140px
+}
+
+.quzzle-container .block-type-4{
+    height: 140px;
+    width:140px;
+}
+
+.quzzle-solver-moves-container{
+    display: inline-block;
+    float:right;
+    color: #ffffff;
+    width:35%;
+}
+.quzzle-solver-moves-container .moves-container ol li::before{
+    content: "";
+    width: 10px;
+    display: inline-block;
+}
+.quzzle-solver-moves-container .moves-container ol li.highlight{
+    font-weight: 900;
+    color:red;
+}
